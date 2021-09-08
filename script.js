@@ -22,10 +22,10 @@ function rotateBar(circle, percents, time) {
       if (timePassed >= time) {
          if (degrees > 180) {
             leftCircle.style.transform = "rotate(" + (degrees - 180) + "deg)";
-            text.textContent = Math.round(timePassed / time * percents); 
+            text.textContent = String(percents); 
          } else {
             rightCircle.style.transform = "rotate(" + degrees + "deg)";
-            text.textContent = Math.round(timePassed / time * percents);
+            text.textContent = String(percents);
          }
          
          clearInterval(timer); 
